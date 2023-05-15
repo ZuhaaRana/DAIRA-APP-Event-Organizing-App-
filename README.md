@@ -1,1 +1,1 @@
-# DAIRA-APP-Event-Organizing-App-
+# DAIRA-APP-Event-Organizing-App
