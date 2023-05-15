@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".oraginzation.auth.OrganizationHome">
+
+    <Button
+        android:id="@+id/btn_set_venue"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="Set_Venue"
+        android:text="SET VENUE"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_updateNews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_scoreboard"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:onClick="Go_to_SetScoreBoard_Activity"
+        android:text="SET SCOREBOARD"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <Button
+        android:id="@+id/btn_registeredParticipants"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Display_Registered_Participants"
+        android:text="Registered Participants"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scoreboard" />
+
+    <Button
+        android:id="@+id/btn_updateNews"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="Update_NEWS"
+        android:text="UPDATE NEWS"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_scoreboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="ORGANIZATION COMMITTEE"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="LOG OUT"
+        android:onClick="LOGOUT"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registeredParticipants"
+        app:layout_constraintVertical_bias="0.187" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

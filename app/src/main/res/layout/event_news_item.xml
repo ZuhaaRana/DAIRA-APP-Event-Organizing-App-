@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name : "
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="22dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/event_name_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Qawali Night"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event News : "
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="22dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="The event will be held on March 24, 2022 at 9:00 pm."
+            android:id="@+id/event_news_text_1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="5dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

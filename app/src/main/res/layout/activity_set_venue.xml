@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".oraginzation.auth.SetVenue">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="402dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/daira" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET EVENT VENUE"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="16dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Name"
+                android:inputType="textAutoCorrect"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Venue"
+                android:inputType="textAutoCorrect"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddVenue"
+            android:layout_width="200dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="Set_Venue"
+            android:layout_marginTop="24dp"
+            android:textSize="24dp"
+            android:text="Add Venue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:onClick="BACK"
+            android:text="Back" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

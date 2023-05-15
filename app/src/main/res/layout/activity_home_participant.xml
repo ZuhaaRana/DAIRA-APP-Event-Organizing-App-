@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Participant.ParticipantHome">
+
+
+    <Button
+        android:id="@+id/btn_scoreboard"
+        android:layout_width="264dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="172dp"
+        android:onClick="View_Scoreboard"
+        android:text="Scoreboard"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="263dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="48dp"
+        android:onClick="Display_Event_News"
+        android:text="EVENT NEWS"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_all_venues" />
+
+    <Button
+        android:id="@+id/btn_all_venues"
+        android:layout_width="263dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="344dp"
+        android:onClick="All_Venues"
+        android:text="All Venues"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="407dp"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:text="PARTICIPANTS"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_scoreboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:text="Log out"
+        android:textSize="20dp"
+        android:onClick="Log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_news"
+        app:layout_constraintVertical_bias="0.217">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
